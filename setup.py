@@ -65,17 +65,11 @@ setup(name='Moonshine',
         ),
         include_package_data=True,
         zip_safe=False,
-        install_requires=[
-            'requests',
-            'anyjson'
-        ],
+        install_requires=[],
         data_files=[
             ('/etc/Moonshine', ['Moonshine.conf'])
         ],
-        entry_points={
-            'console_scripts':
-                ['Moonshine = Moonshine:main']
-        },
+        entry_points={},
         cmdclass={
             'pep8': Pep8Command
         }
